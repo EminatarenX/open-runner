@@ -29,7 +29,7 @@ export const SplitLayout: React.FC<SplitLayoutProps> = ({
         snapOffset: 0,
         dragInterval: 1,
         cursor: 'col-resize',
-        gutter: (index, direction) => {
+        gutter: (_index, direction) => {
           const gutter = document.createElement('div');
           gutter.className = `gutter gutter-${direction}`;
           gutter.style.cssText = `
